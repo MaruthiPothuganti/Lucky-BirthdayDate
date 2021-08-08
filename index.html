@@ -12,20 +12,27 @@
 
 <body>
     <h1>
-        <center>Lucky BirthDay Huh...!</center>
+        <center>Lucky BirthDay Huh 🎂</center>
     </h1>
     <div class="container">
         <h2>Curious to know If your Birthdate is Lucky or Not?</h2>
-        <input type="date" id="birthDate"><br>
+        <form action="/">
+            <input type="date" id="birthDate" required><br>
 
-        <input type="text" id="luckyNumber" placeholder="Enter your Lucky Number"><br>
+            <input type="text" id="luckyNumber" placeholder="Enter your Lucky Number" required><br>
 
-        <button type="submit" id="check">CHECK</button>
-
+            <button type="submit" id="check">CHECK</button>
+        </form>
     </div>
     <div class="containerTwo">
         <h3 id="outputMessage"></h3>
     </div>
+
+    <footer>
+        <a href=""><img class="links" src="Assets/linkedin.svg" alt="LinkedIn"></a>
+        <a href=""><img class="links" src="Assets/instagram.svg" alt="LinkedIn"></a>
+        <a href=""><img class="links" src="Assets/twitter.svg" alt="LinkedIn"></a>
+    </footer>
 </body>
 <script src="app.js"></script>
 
