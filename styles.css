@@ -27,7 +27,6 @@ h1 {
     margin-right: 10%;
     margin-top: 10%;
     color: red;
-    display: block;
 }
 
 input {
@@ -37,29 +36,8 @@ input {
     text-align: center;
     color: black;
     font-family: 'Share Tech Mono', monospace;
-    height: 25px;
-    border-radius: 3px;
 }
 
 button {
     font-family: 'Share Tech Mono', monospace;
-    color: white;
-    background-color: black;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-footer {
-    text-align: center;
-    background-color: red;
-    margin-top: 60%;
-}
-
-.links {
-    height: 30px;
-    width: 30px;
-    background-color: red;
-    border-radius: 10px;
-    margin: 5px;
-    padding: 5px;
 }

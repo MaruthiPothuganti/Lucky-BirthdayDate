@@ -6,6 +6,7 @@ const message = document.querySelector("#outputMessage");
 
 
 btnCheckLuck.addEventListener("click", function checkIfLucky() {
+
     const dob = userBirthDate.value;
 
     const totalSum = sumDate(dob);
@@ -14,7 +15,6 @@ btnCheckLuck.addEventListener("click", function checkIfLucky() {
     } else {
         showMessage("Uh,oh.. Sorry, BetterLuck in NextLife😅");
     }
-
 
 
 });
