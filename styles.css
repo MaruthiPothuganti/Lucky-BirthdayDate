@@ -8,10 +8,16 @@ body {
 }
 
 header {
-    margin-top: 0px;
     background-color: red;
-    height: 50px;
-    text-align: center;
+    height: 4rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+h3 {
+    margin-top: 0px;
+    margin-left: 10px;
+    padding-top: 25px;
 }
 
 h1 {
@@ -22,19 +28,23 @@ h1 {
 .container {
     text-align: center;
     border: solid 2px;
+    margin-top: 10%;
     margin-left: 10%;
     margin-right: 10%;
     padding-bottom: 5%;
     background-color: red;
 }
 
-.containerTwo {
+#outputMessage {
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 10%;
     color: red;
     display: block;
+    margin-top: 0px;
+    margin-left: 10px;
+    padding-top: 30px;
 }
 
 input {
@@ -48,6 +58,11 @@ input {
     border-radius: 3px;
 }
 
+#luckyNumber,
+#check {
+    display: none;
+}
+
 button {
     font-family: 'Share Tech Mono', monospace;
     color: white;
@@ -58,8 +73,7 @@ button {
 
 footer {
     text-align: center;
-    background-color: red;
-    margin-top: 60%;
+    margin-top: 10%;
 }
 
 .links {

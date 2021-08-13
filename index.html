@@ -12,16 +12,19 @@
 
 <body>
     <header>
-        <p>Maruthi Pothuganti</p>
+        <h3>Maruthi <span style="color: aliceblue;">the Web Developer</span></h3>
     </header>
     <h1>
-        <center>Lucky BirthDay Huh 🎂</center>
+        <center>Lucky BirthDay 🎂</center>
     </h1>
     <div class="container">
+
         <h2>Curious to know If your Birthdate is Lucky or Not?</h2>
 
-        <input type="date" id="birthDate"><br>
-
+        <input type="date" id="birthDate" oninput="enable()"><br>
+        <button type="submit" id="next">Next</button>
+        <br>
+        <br>
         <input type="text" id="luckyNumber" placeholder="Enter your Lucky Number"><br>
 
         <button type="submit" id="check">CHECK</button>
