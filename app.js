@@ -5,8 +5,10 @@ const message = document.querySelector("#outputMessage");
 const btnNext = document.querySelector("#next");
 
 const birthDate = userBirthDate.toString();
+const luckNumber = userLuckyNumber.toString();
 
 btnNext.disabled = "true";
+btnCheckLuck.disabled = "true";
 
 function enable() {
     if (birthDate.trim() === "") {
@@ -15,6 +17,15 @@ function enable() {
         btnNext.disabled = "";
     }
 }
+
+function enableCheck() {
+    if (luckNumber.trim() === "") {
+        btnCheckLuck.disabled = "true";
+    } else {
+        btnCheckLuck.disabled = "";
+    }
+}
+
 btnNext.addEventListener("click", function activateNextInput() {
     btnCheckLuck.style.display = "inline";
     userLuckyNumber.style.display = "inline";
