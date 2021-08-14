@@ -35,18 +35,6 @@ h1 {
     background-color: red;
 }
 
-#outputMessage {
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 10%;
-    color: red;
-    display: block;
-    margin-top: 0px;
-    margin-left: 10px;
-    padding-top: 30px;
-}
-
 input {
     margin-bottom: 10px;
     width: 200px;
@@ -71,6 +59,38 @@ button {
     cursor: pointer;
 }
 
+#outputMessage {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    color: red;
+    display: block;
+    margin-top: 0px;
+    margin-left: 10px;
+    padding-top: 30px;
+}
+
+.containerThree {
+    text-align: center;
+}
+
+#loading {
+    height: 150px;
+    width: 150px;
+    display: none;
+}
+
+#happy {
+    height: 100px;
+    display: none;
+}
+
+#sad {
+    height: 100px;
+    display: none;
+}
+
 footer {
     text-align: center;
     margin-top: 10%;
@@ -83,4 +103,8 @@ footer {
     border-radius: 10px;
     margin: 5px;
     padding: 5px;
+}
+
+footer p {
+    color: red;
 }

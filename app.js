@@ -5,6 +5,7 @@ const message = document.querySelector("#outputMessage");
 const btnNext = document.querySelector("#next");
 
 const birthDate = userBirthDate.toString();
+
 btnNext.disabled = "true";
 
 function enable() {
@@ -23,17 +24,35 @@ btnNext.addEventListener("click", function activateNextInput() {
 
 
 btnCheckLuck.addEventListener("click", function checkIfLucky() {
+
     const dob = userBirthDate.value;
 
-
     const totalSum = sumDate(dob);
+    document.getElementById('happy').style.display = "none";
+    document.getElementById('sad').style.display = "none";
+    document.getElementById('outputMessage').style.display = "none";
+
     if (totalSum % (Number(userLuckyNumber.value)) === 0) {
-        showMessage("YOUR BIRTHDAY IS LUCKY🥳🤩");
+
+        document.getElementById('loading').style.display = "inline";
+        setTimeout(function() {
+            document.getElementById('loading').style.display = "none";
+            showMessage("YOUR BIRTHDAY IS LUCKY🥳🤩");
+            document.getElementById('happy').style.display = "inline";
+        }, 5000);
+
+
+
     } else {
-        showMessage("Uh,oh.. Sorry, BetterLuck in NextLife😅");
+
+        document.getElementById('loading').style.display = "inline";
+        setTimeout(function() {
+            document.getElementById('loading').style.display = "none";
+            showMessage("Uh,oh.. Sorry, BetterLuck in NextLife😅");
+            document.getElementById('sad').style.display = "inline";
+        }, 5000);
+
     }
-
-
 
 });
 
@@ -47,5 +66,11 @@ function sumDate(dob) {
 }
 
 function showMessage(msg) {
+    document.getElementById('outputMessage').style.display = "";
     message.innerText = msg;
+}
+
+
+function showLoading() {
+
 }
