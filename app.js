@@ -43,26 +43,30 @@ btnCheckLuck.addEventListener("click", function checkIfLucky() {
     document.getElementById('sad').style.display = "none";
     document.getElementById('outputMessage').style.display = "none";
 
-    if (totalSum % (Number(userLuckyNumber.value)) === 0) {
+    if (Number(userLuckyNumber.value) > 0) {
+        if (totalSum % (Number(userLuckyNumber.value)) === 0) {
 
-        document.getElementById('loading').style.display = "inline";
-        setTimeout(function() {
-            document.getElementById('loading').style.display = "none";
-            showMessage("YOUR BIRTHDAY IS LUCKY🥳🤩");
-            document.getElementById('happy').style.display = "inline";
-        }, 5000);
+            document.getElementById('loading').style.display = "inline";
+            setTimeout(function() {
+                document.getElementById('loading').style.display = "none";
+                showMessage("YOUR BIRTHDAY IS LUCKY🥳🤩");
+                document.getElementById('happy').style.display = "inline";
+            }, 5000);
 
 
 
+        } else {
+
+            document.getElementById('loading').style.display = "inline";
+            setTimeout(function() {
+                document.getElementById('loading').style.display = "none";
+                showMessage("Uh,oh.. Sorry, BetterLuck in NextLife😅");
+                document.getElementById('sad').style.display = "inline";
+            }, 5000);
+
+        }
     } else {
-
-        document.getElementById('loading').style.display = "inline";
-        setTimeout(function() {
-            document.getElementById('loading').style.display = "none";
-            showMessage("Uh,oh.. Sorry, BetterLuck in NextLife😅");
-            document.getElementById('sad').style.display = "inline";
-        }, 5000);
-
+        showMessage("Your lucky number cant be '0' or below right? or Should I say'This is invalid 😅'");
     }
 
 });
